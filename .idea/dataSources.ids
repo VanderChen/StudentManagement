@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - student@localhost" uuid="a1c2edec-b90b-45cc-b2fb-4615483bfd63">
+    <database-info product="MySQL" version="5.7.10-enterprise-commercial-advanced-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="student"/>
+      <table id="2" parent="1" name="information"/>
+      <table id="3" parent="1" name="user"/>
+      <column id="4" parent="2" name="logName">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="5" parent="2" name="name">
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="6" parent="2" name="gender">
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="7" parent="2" name="phoneNumber">
+        <data-type>char(11)</data-type>
+      </column>
+      <column id="8" parent="2" name="birthday">
+        <data-type>date</data-type>
+      </column>
+      <column id="9" parent="2" name="address">
+        <data-type>char(255)</data-type>
+      </column>
+      <key id="10" parent="2" name="PRIMARY">
+        <columns>logName</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="3" name="logName">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="12" parent="3" name="password">
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="13" parent="3" name="email">
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="14" parent="3" name="isAdmin">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="15" parent="3" name="PRIMARY">
+        <columns>logName</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
